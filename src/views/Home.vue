@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <SubmitForm />
-    <router-view />
+  <div class="home__wrapper">
+    <submit-form />
   </div>
 </template>
 
@@ -14,8 +13,8 @@ export default {
 
 <style scoped>
 .home__wrapper {
-  margin: 0 auto;
+  /* margin: 0 auto;
   max-width: 600px;
-  background-color: #ccc;
+  background-color: #ccc; */
 }
 </style>

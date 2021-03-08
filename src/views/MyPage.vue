@@ -1,5 +1,13 @@
 <template>
-  <div class="mypage">
-    <h1>This is my page.</h1>
+  <div>
+    <MyPageFace />
+    <router-view />
   </div>
 </template>
+
+<script>
+import MyPageFace from "../components/MyPageFace.vue"
+export default {
+  components: { MyPageFace },
+}
+</script>

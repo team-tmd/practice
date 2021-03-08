@@ -11,9 +11,6 @@
       <div v-else key="logout">
         <button type="button" @click="doLogin">ログイン</button>
       </div>
-
-      <!-- ホーム：ルーム一覧 -->
-      <div v-if="roomList"></div>
       <!-- ルーム名入力 -->
       <p v-for="room in rooms" :key="room.id">
         {{ room.title }}
@@ -70,8 +67,6 @@ export default {
 
       rooms: [],
       inputRoomTitle: "", // 入力したメッセージ
-
-      members: [],
     }
   },
   created() {
@@ -116,12 +111,6 @@ export default {
         key: snapchat.key,
         title: room.title,
       })
-      // const roomInfo = this.room + ":" + this.room.title
-      // roomInfo.push({
-      //   member: "石川才人",
-      // })
-
-      this.members.push
     },
     // 受け取ったメッセージをchatに追加
     // データベースに新しい要素が追加されると随時呼び出される
